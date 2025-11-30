@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class DecimalToBinaryIterative {
+   public static void toBinary(int n) {
+      String binary = "";
+      while (n > 0) {
+         binary = (n % 2) + binary;
+         n = n / 2;
+      }
+      System.out.println(binary);
+   }
+
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      int num = scnr.nextInt();
+      toBinary(num);
+   }
+}
